@@ -1,0 +1,44 @@
+* {
+   padding: 0 10%; 
+}    
+p {
+    font-family: courier;
+}
+body {
+    background-image: url(./assets/background.png)
+}
+
+
+#header {
+        overflow: hidden;
+        background-color: #333333;
+        padding: 0 10%;
+        max-height: 40 px;
+}
+#header a {
+    color: #ff0099;
+    text-align-last: right;
+    
+}
+#header img {
+    padding-top: 20px;
+}
+
+#name h2 {
+    color: #ff0099;
+
+}
+h1 h2 {
+    font-family: 'Merriweather', serif;
+}
+
+#wiki-title {
+    text-align: center;
+    font-size: 28px;
+}
+#separator {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+}

@@ -1,0 +1,60 @@
+* {
+   padding: 0 10%;
+   font-family: courier;
+}    
+p {
+    font-family: courier;
+    font-style: normal;
+}
+body {
+    background-image: url(./assets/background.png)
+}
+
+
+#header {
+        overflow: auto;
+        background-color: #333333;
+        padding: 10px 10%;
+        max-width: auto;
+
+        
+}
+#header img {
+    float: left;
+}
+
+#name h2 {
+    color: #ff0099;
+
+}
+
+#name h1 {
+    font-size: 32px;
+}
+h1 h2 {
+    font-family: 'Merriweather', serif;
+}
+
+#wiki-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+#separator {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+}
+
+.link {
+    display: inline-block;
+    margin: 1px;
+    color: #ff0099;
+    float: right;
+    max-width: auto;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    
+}
