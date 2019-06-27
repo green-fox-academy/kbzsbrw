@@ -6,6 +6,13 @@ while (times < 1) {
 
 }
 
-for (let iterator: number = 0; iterator < 100 ; iterator++) {
+for (let iterator: number = 0; iterator < 10 ; iterator++) {
     console.log(iterator);
 }
+
+do {
+    console.log("nota "+times);
+    times++;
+
+} while (times < 10);
+
