@@ -6,7 +6,10 @@ let myName: string = "Zsolt";
 
    
 console.log(times);
-console.log(myName);
+
+times = 15;
+
+console.log(times);
 
 
 let itCanBeUndefined: number;
