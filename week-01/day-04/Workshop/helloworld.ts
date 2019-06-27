@@ -1,1 +1,3 @@
-console.log("hello world");
+let myName:  string= "Zsolt";
+
+console.log("hello "+myName);
