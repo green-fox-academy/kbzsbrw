@@ -16,7 +16,7 @@ let space: string="";
 let star: string="*";
 while (lineCount>=1) {
     for (let j=lineCount-1; j>=1; j--){
-    space+="a";
+    space+=" ";
 }
     console.log(space+star);
     star+="*";
