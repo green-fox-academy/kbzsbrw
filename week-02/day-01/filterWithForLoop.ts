@@ -1,6 +1,6 @@
 'use strict';
 
-let names: string[] = ["Captain Marvel", "Winter Soldier", "black Panther", "Mark"];
+let originalNames: string[] = ["Captain Marvel", "Winter Soldier", "black Panther", "Mark"];
 
 function filterNamesLongerThanFive (names: string[]): string[] {
     let filteredNames: string [] = [];
@@ -12,4 +12,4 @@ function filterNamesLongerThanFive (names: string[]): string[] {
     return filteredNames;
 }
 
-console.log(filterNamesLongerThanFive(names));
+console.log(filterNamesLongerThanFive(originalNames));
