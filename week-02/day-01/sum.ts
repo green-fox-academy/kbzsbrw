@@ -21,3 +21,8 @@ firstTable[4] = "Liza";
 for (let i: number = 0; i<firstTable.length;i++) {
     console.log(firstTable[i]);
 }
+
+let diffArray: [string, boolean, string] = ["Mark", true, "mazli"];
+console.log(diffArray);
+
+let onlyTwoArray: Array<boolean | number> = [2, false, 3, true, true, 3, 313];
