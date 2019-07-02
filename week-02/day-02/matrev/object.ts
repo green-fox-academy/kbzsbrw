@@ -27,7 +27,7 @@ person.wtf.greeting();
 
 console.log(Object.keys(person));
 // this will give you back a boolean if can manage to find a key with the same "number or string"
-console.log(person.hasOwnProperty("name"));
+console.log("this is it"+person.hasOwnProperty("name"));
 
 if (person.hasOwnProperty("address")) {
     console.log(person.address);
