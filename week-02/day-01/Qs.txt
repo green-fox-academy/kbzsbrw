@@ -1,1 +1,4 @@
 swap
+sum all
+
+function printParams(inputParam1: string, ...inputParams: string[]) {

@@ -1,7 +1,10 @@
 'use strict';
 
-let integers: number[] = [4,5,6,7];
-
-integers.forEach (function (item) {
-    console.log(item);
-})
+function printParams(inputParam1: string, ...inputParams: string[]) {
+    console.log(inputParam1);
+    for (let i: number = 0; i < inputParams.length; i++) {
+      console.log(inputParams[i]);
+    }
+  }
+  
+  printParams('Test1', 'Test2', 'Test3', 'Test4');
