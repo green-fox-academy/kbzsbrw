@@ -37,7 +37,8 @@ if (person.hasOwnProperty("address")) {
 
 let personCopyWithReference = person;
 
-console.log(person);
 console.log(personCopyWithReference);
 person.name = " new Name";
 console.log(personCopyWithReference);
+//this will create a whole new object with the same keys and values, and will have no connection to the original object
+let wholeNewPersonWithTheInitialValues = {...person};
