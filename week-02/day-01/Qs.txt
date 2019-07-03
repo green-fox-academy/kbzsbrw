@@ -2,3 +2,11 @@ swap
 sum all
 
 function printParams(inputParam1: string, ...inputParams: string[]) {
+
+
+todo prints
+takes longer
+
+Demo: telephon book nagyon szép megoldás!!!!!
+
+Maps es objects
