@@ -13,7 +13,7 @@ const ctx = canvas.getContext('2d');
 
 function centeredBox(x) {
     for (let i: number = 0; i<3; i++) {
-        ctx.strokeRect(300-(x/2),200-(x/2),x*(i+1),x*(i+1))
+        ctx.strokeRect(300-(x*(i+1)/2),200-(x*(i+1)/2),x*(i+1),x*(i+1))
     }
 }
 centeredBox(20);
