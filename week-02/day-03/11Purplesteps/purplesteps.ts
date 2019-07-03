@@ -11,9 +11,9 @@ const ctx = canvas.getContext("2d");
 function purpleSteps(x: number) {
   for (let i: number = 0; i < x; i++){
       ctx.fillStyle = "violet";
-      ctx.fillRect(x*i,x*i,x,x);
+      ctx.fillRect(x*(i+1),x*(i+1),x,x);
       ctx.fillStyle = "black";
-      ctx.strokeRect(x*i,x*i,x,x);
+      ctx.strokeRect(x*(i+1),x*(i+1),x,x);
   };
 }
 purpleSteps(15);
