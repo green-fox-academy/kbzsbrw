@@ -10,3 +10,5 @@ takes longer
 Demo: telephon book nagyon szép megoldás!!!!!
 
 Maps es objects
+
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Bezier_and_quadratic_curves
