@@ -49,3 +49,5 @@ function getPostRatio(fileName: string): number {
     return ratio;
 }
 console.log(getPostRatio("06log.txt"));
+
+//lets try with string.endsWith
