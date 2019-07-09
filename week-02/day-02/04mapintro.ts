@@ -16,7 +16,7 @@ console.log(mapIntro.get(99))
 mapIntro.delete(97);
 mapIntro.has(100);
 console.log(mapIntro);
-mapIntro.clear;
+mapIntro.;
 console.log(mapIntro);
 
 

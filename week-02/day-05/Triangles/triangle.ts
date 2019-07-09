@@ -16,7 +16,7 @@ function drawTriangles(count: number) {
   ctx.translate(0, myHeight);
   let side: number = Math.floor(myWidth / count);
   for (let j: number = 0; j < 10; j++) {
-    for (let i: number = 0; i < (myWidth / side)-j; i++) {
+    for (let i: number = 0; i < myWidth / side - j; i++) {
       drawTriangle(side);
       ctx.translate(side, 0);
     }
