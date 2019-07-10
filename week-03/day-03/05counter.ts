@@ -1,7 +1,7 @@
 "use strict";
 
 class Counter {
-  counter: number = 0;
+  counter: number;
 
   constructor(number: number = 0) {
     this.counter = number;
@@ -13,11 +13,11 @@ class Counter {
       this.counter = this.counter + number;
     }
   }
-  get() {
+  get(): number {
     return this.counter;
   }
-  reset() {
-    this.counter = 0;
+  reset(): number {
+    return (this.counter = 0);
   }
 }
 let number: Counter = new Counter();
