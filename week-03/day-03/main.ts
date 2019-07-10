@@ -22,8 +22,10 @@ function initializePokemon(): Pokemon[] {
   ];
 }
 let winnerPokemon: Pokemon;
-initializePokemon().forEach(function(Pokemon): Pokemon {
-  if (Pokemon.isEffectiveAgainst(wildPokemon)) return (winnerPokemon = Pokemon);
+initializePokemon().forEach(function(Pokemon: Pokemon) {
+  if (Pokemon.isEffectiveAgainst(wildPokemon)) {
+    winnerPokemon = Pokemon;
+  }
 });
 // console.log(winnerPokemon);
 console.log("I choose you, " + winnerPokemon.name);
