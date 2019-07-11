@@ -17,3 +17,5 @@ class Animal {
 }
 
 let dog: Animal = new Animal(20.2012, 201.012012);
+
+export { Animal };
