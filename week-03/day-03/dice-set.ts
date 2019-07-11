@@ -40,7 +40,6 @@ class DiceSet {
         i--;
       }
     }
-    console.log(diceSet.getCurrent());
   }
 }
 
@@ -52,6 +51,7 @@ class DiceSet {
 
 let diceSet = new DiceSet();
 diceSet.sixPicker();
+console.log(diceSet.getCurrent());
 // console.log(diceSet.getCurrent());
 // console.log(diceSet.roll());
 // console.log(diceSet.getCurrent());
