@@ -1,10 +1,4 @@
 'use strict';
-import { Thing } from './thing';
-import { Fleet } from './fleet';
-
-let fleet = new Fleet();
-
-
 // -  You have the `Thing` class
 // -  You have the `Fleet` class
 // -  Create the `FleetOfThings` class with a `main` method
@@ -19,3 +13,26 @@ let fleet = new Fleet();
 // 4. [x] Eat lunch
 
 // Hint: You have to create a `print()` method as well 
+import { Thing } from './thing';
+import { Fleet } from './fleet';
+
+
+class FleetOfThings {
+    fleet: Fleet;
+    main(): void{
+        this.fleet= new Fleet();
+        this.fleet.add(new Thing("Get milk"));
+        this.fleet.add(new Thing("Remove the obstacles"));
+        this.fleet.add(new Thing("Stand up"));
+        this.fleet.add(new Thing("Eat lunch"));
+    }
+    print(): string {
+        let result: string = '';
+        this.fleet.getThings().forEach(Thing => {
+            result += Thing;
+        });
+        console.log()
+        return ;
+    }
+}
+
