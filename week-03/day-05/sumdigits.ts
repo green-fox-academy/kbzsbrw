@@ -5,7 +5,9 @@ function addDigits(n: number): number {
     return 0;
   } else {
     // Math.floor((n - Math.floor((n / 10))) * 10);
-    return Math.floor((n - Math.floor(n / 10) * 10)) + addDigits(Math.floor(n/10));
+    return (
+      Math.floor(n - Math.floor(n / 10) * 10) + addDigits(Math.floor(n / 10))
+    );
   }
 }
 // let n = 3456;
