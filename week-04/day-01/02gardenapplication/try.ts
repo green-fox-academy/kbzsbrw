@@ -13,7 +13,6 @@ garden1.addFlowerToGarden(yellow);
 garden1.addFlowerToGarden(blue);
 garden1.addTreeToGarden(purple);
 garden1.addTreeToGarden(orange);
-// yellow.getNameAndWater();
 garden1.showGarden();
 garden1.watering(40);
 garden1.showGarden();

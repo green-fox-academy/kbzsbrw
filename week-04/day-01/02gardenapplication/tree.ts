@@ -1,11 +1,9 @@
 "use strict";
+import { Plant } from './plant';
 
-export class Tree {
-  name: string;
-  waterAmount: number = 0;
-
-  constructor(name: string) {
-    this.name = name;
+export class Tree extends Plant {
+  constructor(name: string, waterAmount: number = 0) {
+    super(name, waterAmount);
   }
   needsWater(): string {
     if (this.waterAmount < 10) {
