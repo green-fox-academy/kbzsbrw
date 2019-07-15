@@ -1,21 +1,25 @@
-'use strict';
+"use strict";
 
 class Person {
-name: string;
-age: number;
-height: number;
+  name: string;
+  age: number;
+  height: number;
 
-
-constructor (name: string, age: number, height: number) {
+  constructor(name: string, age: number, height: number) {
     this.name = name;
     this.age = age;
     this.height = height;
+  }
+
+  askMeHoIAm() {
+    console.log("Well I've been better");
+  }
+  socialize() {
+    console.log("I'm seeing my friends every day");
+  }
 }
 
-askMeHoIAm () {
-    console.log("Well I've been better");
-}
-socialize () {
-    console.log("I'm seeing my friends every day");
-}
-}
+const averageJoe = new Person("John", 25, 180);
+averageJoe.askMeHoIAm();
+
+export default Person;
