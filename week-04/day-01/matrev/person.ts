@@ -19,7 +19,6 @@ class Person {
   }
 }
 
-const averageJoe = new Person("John", 25, 180);
-averageJoe.askMeHoIAm();
+// averageJoe.askMeHoIAm();
 
 export default Person;
