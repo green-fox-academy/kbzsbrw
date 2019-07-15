@@ -6,9 +6,14 @@ export class Sponsor extends Person {
   company: string;
   hiredStudents: number = 0;
 
-  constructor (name: string, age: number, gender: string, company: string = "Google") {
-      super(name, age, gender);
-      this.company = company;
+  constructor(
+    name: string = "Jane Doe",
+    age: number = 30,
+    gender: string = "female",
+    company: string = "Google"
+  ) {
+    super(name, age, gender);
+    this.company = company;
   }
 
   introduce() {
@@ -27,9 +32,9 @@ export class Sponsor extends Person {
     );
   }
   hire() {
-      this.hiredStudents++;
+    this.hiredStudents++;
   }
   getGoal() {
-      console.log('My goal is: Hire brilliant junior software developers.');
+    console.log("My goal is: Hire brilliant junior software developers.");
   }
 }

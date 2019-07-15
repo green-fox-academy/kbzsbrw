@@ -16,7 +16,7 @@ export class Person {
   }
   introduce() {
     console.log(
-      "Hi, I'm " + this.name + ", a " + this.age + " year old " + this.gender
+      "Hi, I'm " + this.name + ", a " + this.age + " year old " + this.gender+"."
     );
   }
 

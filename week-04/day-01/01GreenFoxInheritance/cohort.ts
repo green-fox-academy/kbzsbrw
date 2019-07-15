@@ -20,7 +20,7 @@ export class Cohort {
     console.log(
       "The " +
         this.name +
-        "cohort has " +
+        " cohort has " +
         this.students.length +
         " students, and " +
         this.mentors.length +

@@ -6,13 +6,19 @@ export class Student extends Person {
   previousOrganization: string;
   skippedDays: number = 0;
 
-  constructor (name: string, age: number, gender: string, previousOrganization: string = "The School of Life", skippedDays: number = 0) {
+  constructor(
+    name: string = "Jane Doe",
+    age: number = 30,
+    gender: string = "female",
+    previousOrganization: string = "The School of Life",
+    skippedDays: number = 0
+  ) {
     super(name, age, gender);
     this.previousOrganization = previousOrganization;
   }
 
   getGoal() {
-    console.log("My goal is: Be a junior software developre");
+    console.log("My goal is: Be a junior software developer.");
   }
 
   introduce() {
@@ -30,7 +36,7 @@ export class Student extends Person {
         " days from the course already."
     );
   }
-  skipDays (numberOfDays: number) {
+  skipDays(numberOfDays: number) {
     this.skippedDays = this.skippedDays + numberOfDays;
   }
 }
