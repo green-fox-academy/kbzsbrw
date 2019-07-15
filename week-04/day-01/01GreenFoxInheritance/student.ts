@@ -17,11 +17,11 @@ export class Student extends Person {
     this.previousOrganization = previousOrganization;
   }
 
-  getGoal() {
+  getGoal(): void {
     console.log("My goal is: Be a junior software developer.");
   }
 
-  introduce() {
+  introduce(): void {
     console.log(
       "Hi, I'm " +
         this.name +
@@ -36,7 +36,7 @@ export class Student extends Person {
         " days from the course already."
     );
   }
-  skipDays(numberOfDays: number) {
+  skipDays(numberOfDays: number): void {
     this.skippedDays = this.skippedDays + numberOfDays;
   }
 }

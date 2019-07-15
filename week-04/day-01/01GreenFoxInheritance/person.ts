@@ -14,13 +14,19 @@ export class Person {
     this.age = age;
     this.gender = gender;
   }
-  introduce() {
+  introduce(): void {
     console.log(
-      "Hi, I'm " + this.name + ", a " + this.age + " year old " + this.gender+"."
+      "Hi, I'm " +
+        this.name +
+        ", a " +
+        this.age +
+        " year old " +
+        this.gender +
+        "."
     );
   }
 
-  getGoal() {
+  getGoal(): void {
     console.log("My goal is: Live for the moment!");
   }
 }

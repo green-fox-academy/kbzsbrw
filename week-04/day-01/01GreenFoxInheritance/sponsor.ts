@@ -16,7 +16,7 @@ export class Sponsor extends Person {
     this.company = company;
   }
 
-  introduce() {
+  introduce(): void {
     console.log(
       "Hi, I'm " +
         this.name +
@@ -31,10 +31,10 @@ export class Sponsor extends Person {
         " students so far."
     );
   }
-  hire() {
+  hire(): void {
     this.hiredStudents++;
   }
-  getGoal() {
+  getGoal(): void {
     console.log("My goal is: Hire brilliant junior software developers.");
   }
 }

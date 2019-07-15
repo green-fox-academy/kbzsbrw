@@ -10,8 +10,8 @@ class GreenFoxStudent extends Person {
     super(name, age, height);
     this.gitHubUsername = git;
   }
-  socialize(){
-      console.log("I do not even know my friend's name anymore.")
+  socialize() {
+    console.log("I do not even know my friend's name anymore.");
   }
 }
 
@@ -24,5 +24,6 @@ const sandor: GreenFoxStudent = new GreenFoxStudent(
 const averageJoe = new Person("John", 25, 180);
 
 sandor.socialize();
-console.log("that is Joe");
-averageJoe.socialize();
+console.log(sandor instanceof Person);
+
+export default GreenFoxStudent;

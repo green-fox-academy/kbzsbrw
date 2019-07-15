@@ -10,13 +10,13 @@ export class Cohort {
     this.name = name;
   }
 
-  addStudent(student: Student) {
+  addStudent(student: Student): void {
     this.students.push(student);
   }
-  addMentor(mentor: Mentor) {
+  addMentor(mentor: Mentor): void {
     this.mentors.push(mentor);
   }
-  info() {
+  info(): void {
     console.log(
       "The " +
         this.name +
