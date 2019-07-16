@@ -29,12 +29,12 @@ class Reservation implements Reservationy {
   }
 
   booking(): void {
-      console.log(
-        "Booking# " +
-          `${this.getCodeBooking()}` +
-          " for " +
-          `${this.getDowBooking()}`
-      );
+    console.log(
+      "Booking# " +
+        `${this.getCodeBooking()}` +
+        " for " +
+        `${this.getDowBooking()}`
+    );
   }
 }
 export { Reservation };
