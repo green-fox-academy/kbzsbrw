@@ -53,3 +53,5 @@ function orderedDominoes(): Domino[] {
   return orderedDominoes;
 }
 print(orderedDominoes());
+
+export {dominoes};
