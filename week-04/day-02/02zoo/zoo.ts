@@ -7,18 +7,8 @@ abstract class Animal {
   sponsor: string;
   origin: string;
 
-  constructor(
-    name: string,
-    age: number,
-    cage: number,
-    sponsor: string,
-    origin: string
-  ) {
+  constructor(name: string) {
     this.name = name;
-    this.age = age;
-    this.cage = cage;
-    this.sponsor = sponsor;
-    this.origin = origin;
   }
 
   abstract getName(): string;

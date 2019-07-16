@@ -2,10 +2,10 @@
 
 import { Animal } from "./zoo";
 
-class Mammal extends Animal {
-  numberOfNipples: number;
-  ifSweat: boolean;
-  diet: string;
+class Bird extends Animal {
+  colorOfTale: string;
+  canFly: boolean;
+  beakType: string;
 
   constructor(name: string) {
     super(name);
@@ -15,7 +15,7 @@ class Mammal extends Animal {
     return this.name;
   }
   breed(): string {
-    return "pushing out miniature crying gnomes";
+    return "egg";
   }
 }
-export { Mammal };
+export { Bird };

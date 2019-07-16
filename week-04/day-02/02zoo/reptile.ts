@@ -2,9 +2,9 @@
 
 import { Animal } from "./zoo";
 
-class Mammal extends Animal {
-  numberOfNipples: number;
-  ifSweat: boolean;
+class Reptile extends Animal {
+  territory: string;
+  ifLooseTale: boolean;
   diet: string;
 
   constructor(name: string) {
@@ -15,7 +15,7 @@ class Mammal extends Animal {
     return this.name;
   }
   breed(): string {
-    return "pushing out miniature crying gnomes";
+    return "egg";
   }
 }
-export { Mammal };
+export { Reptile };
