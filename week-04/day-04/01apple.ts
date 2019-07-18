@@ -1,17 +1,15 @@
-'use strict';
+"use strict";
 
-let test = require('tape');
+let test = require("tape");
 
 class Apple {
-
-    getApple (): string {
-        return "apple";
-    }
+  getApple(): string {
+    return "apple";
+  }
 }
 
-test('check if apple',t=>{
-    let apple1: Apple = new Apple();
-    t.equal(apple1.getApple(), 'apple');
-}
-
-);
+test("check if apple", t => {
+  let apple1: Apple = new Apple();
+  t.equal(apple1.getApple(), "orange");
+  t.end();
+});
