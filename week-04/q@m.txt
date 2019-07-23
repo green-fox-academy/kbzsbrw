@@ -4,3 +4,5 @@ Q - Must watch: https://www.youtube.com/watch?v=rRgD1yVwIvE
 Q - the last 3 quastions from the day 01
 M - first day: folytasd a carrierv2-vel. VAlahogy helyre kell rakni a trycath loopot, aztán már csak a fight kell és elvileg kész.
 Q - Look up to SOLID
+Q- test is absolutely not done!
+Q- do the fibonacci recursion!
