@@ -38,30 +38,30 @@ function countLettersIntoObject(letters: string[]): object {
   return characterCounted;
 }
 
-function mostCommonCharacter(filename: string): object {
+function mostCommonCharacters(filename: string): object {
   let text = readTxt(filename);
 
   if (text) {
     let letters: string[] = textToLetters(text);
     let countedCharacters: object = countLettersIntoObject(letters);
-    let firstLetter = Object.values(countedCharacters).sort(
+    let mostCommonLetter = Object.values(countedCharacters).sort(
       (n1, n2) => n2 - n1
     )[0];
-    let secondLetter = Object.values(countedCharacters).sort(
+    let secondMostCommonLetter = Object.values(countedCharacters).sort(
       (n1, n2) => n2 - n1
     )[1];
-    let mostCommonCharacter: object = {};
+    let mostCommonCharacters: object = {};
     for (let key in countedCharacters) {
-      if (countedCharacters[key] === firstLetter) {
-        mostCommonCharacter[key] = firstLetter;
+      if (countedCharacters[key] === mostCommonLetter) {
+        mostCommonCharacters[key] = mostCommonLetter;
       }
     }
     for (let key in countedCharacters) {
-      if (countedCharacters[key] === secondLetter) {
-        mostCommonCharacter[key] = secondLetter;
+      if (countedCharacters[key] === secondMostCommonLetter) {
+        mostCommonCharacters[key] = secondMostCommonLetter;
       }
     }
-    return mostCommonCharacter;
+    return mostCommonCharacters;
   }
 }
-console.log(mostCommonCharacter("text.txt"));
+console.log(mostCommonCharacters("text.txt"));
