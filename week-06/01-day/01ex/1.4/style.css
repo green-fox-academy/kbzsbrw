@@ -6,10 +6,10 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 300px;
   height: 100vh;
 }
 .item {
-  width: 380px;
   flex-grow: 1;
 }
 .green {
