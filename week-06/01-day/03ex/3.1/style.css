@@ -5,7 +5,9 @@
   background-color: yellow;
   margin: 0;
   padding: 0;
-  /* ezt a kettőt kell itt babrálni */
+  border: 0;
+  /* ezt a kettőt kell itt babrálni
+  illetve a margint az li elementen */
   justify-content: flex-end;
   align-items: flex-end;
 } 
@@ -14,8 +16,8 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin: 10px;
   height: 140px;
+  margin-left: 5px;
   width: 140px;  
   background-color: FUCHSIA;
 }
