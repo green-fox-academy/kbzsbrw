@@ -1,0 +1,40 @@
+body {
+  height: 600px;
+  margin: 20px 30px;
+  align-items: stretch;
+}
+header {
+  display: flex;
+  background-color: purple;
+  height: auto;
+}
+a {
+  height: 20px;
+  width: auto;
+  background-color: cyan;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+  padding: 5px;
+}
+p {
+  padding: 15px;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  display: flex;
+}
+.content {
+  width: 70%;
+  height: 100%;
+  padding: 15px;
+  background-color: yellow;
+}
+.sidebar {
+  padding: 15px;
+  height: 100%;
+  width: 30%;
+  background-color: green;
+}
