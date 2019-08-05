@@ -5,18 +5,18 @@
 
 .container {
   display: flex;
-  flex-direction: column;
-} 
+  flex-direction: row;
+}
 .item {
   height: 190px;
-  width: 190px;
-
+  flex-grow: 1;
 }
 .green {
-  background-color: teal;
+  background-color: green;
 }
 .yellow {
   background-color: yellow;
+  flex-grow: 2;
 }
 .purple {
   background-color: FUCHSIA;
