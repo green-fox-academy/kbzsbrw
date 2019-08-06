@@ -10,4 +10,5 @@ liNodelist[i].innerHTML=newContent[i]
 let ulTag = document.querySelector("ul");
 console.log(ulTag);
 ulTag.setAttribute("style", "background-color: red" )
-console.log(ulTag);
+//the next line will be overwritten by the previous line(bcs the javascript runs after the inHtml styletag)
+ulTag.className="a";
