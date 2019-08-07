@@ -53,12 +53,27 @@ const cocktails = [
     isAlcoholic: false
   }
 ];
-const alcoholList = ['gin', 'vodka', 'rum', 'tequila'];
+const alcoholList = ["gin", "vodka", "rum", "tequila"];
 
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
-  res.render("home", { cocktails, alcoholList, alcohol: req.query.alcohol});
+  let spirit = req.query.alcohol;
+  let cocktailsFiltered = [];
+  if (alcoholList.includes(spirit)) {
+    cocktails.forEach(cocktail => {
+      if (cocktail.contains.includes(spirit)) {
+        cocktailsFiltered.push(cocktail);
+      }
+    });
+    res.render("home", {
+      cocktails: cocktailsFiltered,
+      alcoholList,
+    //   alcohol: req.query.alcohol
+    });
+  } else {
+    res.render("home", { cocktails, alcoholList, alcohol:""});
+  }
 });
-app.use(express.static('assets'));
+app.use(express.static("assets"));
 
 app.listen(PORT, () => console.log(`I am listening on port ${PORT}`));

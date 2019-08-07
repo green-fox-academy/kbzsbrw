@@ -12,7 +12,6 @@
     <div class="alcohol-type">
         <a href="/">all</a>
         <% alcoholList.forEach(alcohol => {%>
-            <!-- <% let link ="?alcohol="+alcohol%> -->
             <a href=<%= "?alcohol="+alcohol%>><%= alcohol%></a>
          <%})%>   
     </div>
@@ -22,24 +21,20 @@
         <th class="second-column">price</th>
     </tr>
     <% cocktails.forEach(cocktail =>{%>
-        <% if(alcohol!== undefined && alcoholList.indexOf(alcohol)>-1) {%>
-            <% if (cocktail.contains.includes(alcohol)) { %>
+        <% if (cocktail.isAlcoholic) {%>
             <tr>
-                <td class="first-row"><%= cocktail.name %>
-                <p>hello</p>
-                
-                </td>
+                <td class="first-row name"><strong><%= cocktail.name %></strong></td>
                 <td class="first-row"><%= cocktail.contains%></td>
                 <td class="second-column"><%= cocktail.price+" Ft"%></td>
             </tr>
-            <%}%>
         <%} else {%>
-                <tr>
-                    <td class="first-row"><%= cocktail.name %></td>
+            <tr>
+                    <td class="first-row name"><strong><%= cocktail.name %></strong><%='(non-alcoholic)'%>
+                    </td>
                     <td class="first-row"><%= cocktail.contains%></td>
                     <td class="second-column"><%= cocktail.price+" Ft"%></td>
                 </tr>
-            <%}%>
+        <%}%>
     <% })%>
 </table>
 
