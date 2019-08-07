@@ -8,7 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Things to do today:</h1>
+    <h1>Cocktails</h1>
+    <div class="alcohol-type">
+        <a href="/">all</a>
+        <% alcoholList.forEach(alcohol => {%>
+            <!-- <% let link ="?alcohol="+alcohol%> -->
+            <a href=<%= "?alcohol="+alcohol%>><%= alcohol%></a>
+         <%})%>   
+    </div>
+<table class="table">
+    <tr>
+        <th>name</th>
+        <th class="second-column">price</th>
+    </tr>
+    <% cocktails.forEach(cocktail =>{%>
+        <% if(alcohol!== undefined && alcoholList.indexOf(alcohol)>-1) {%>
+            <% if (cocktail.contains.includes(alcohol)) { %>
+            <tr>
+                <td class="first-row"><%= cocktail.name %>
+                <p>hello</p>
+                
+                </td>
+                <td class="first-row"><%= cocktail.contains%></td>
+                <td class="second-column"><%= cocktail.price+" Ft"%></td>
+            </tr>
+            <%}%>
+        <%} else {%>
+                <tr>
+                    <td class="first-row"><%= cocktail.name %></td>
+                    <td class="first-row"><%= cocktail.contains%></td>
+                    <td class="second-column"><%= cocktail.price+" Ft"%></td>
+                </tr>
+            <%}%>
+    <% })%>
+</table>
 
 </body>
 </html>

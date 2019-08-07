@@ -53,12 +53,11 @@ const cocktails = [
     isAlcoholic: false
   }
 ];
-
 const alcoholList = ['gin', 'vodka', 'rum', 'tequila'];
 
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
-  res.render("home", { cocktails: cocktails, alcohol: alcoholList });
+  res.render("home", { cocktails, alcoholList, alcohol: req.query.alcohol});
 });
 app.use(express.static('assets'));
 
