@@ -38,8 +38,8 @@
     <script>
       //   1: generate 100 divs to the <section> element and add index numbers to it as the element's textContent
       let section = document.querySelector("section");
-      let length = 99;
-      for (let i = 0; i < length; i++) {
+      let length = 100;
+      for (let i = 0; i < length - 1; i++) {
         let div = document.createElement("div");
         div.textContent = i + 2;
         section.appendChild(div);
@@ -72,16 +72,14 @@
       //    - the timer should stop when there are no more elements left to be colored
 
       let counter = 0;
+      let div = document.querySelectorAll("div");
       setInterval(function() {
-        let div = document.querySelectorAll("div");
-        div.forEach(div => {
-          if (counter == length) {
-            clearInterval();
-          } else {
-            priming(div);
-            counter++;
-          }
-        });
+        if (counter == length) {
+          clearInterval();
+        } else {
+          priming(div[counter]);
+          counter++;
+        }
       }, 100);
     </script>
   </body>
