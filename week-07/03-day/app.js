@@ -70,10 +70,37 @@ app.post("/dountil/:action", (req, res) => {
   }
   res.send(response);
 });
-app.post("/login", (req, res) => {
-  console.log(req.body.username);
-  console.log(req.body.password);
-  res.send("ok");
+app.post("/arrays", (req, res) => {
+  let response = {};
+  let numbers = req.body.numbers;
+  if (req.body.what == "sum") {
+    let sum = 0;
+    numbers.forEach(element => {
+      sum += element;
+    });
+    response = {
+      result: sum
+    };
+  } else if (req.body.what == "multiply") {
+    let multiply = 1;
+    numbers.forEach(element => {
+      multiply *= element;
+    });
+    response = {
+      result: multiply
+    };
+  } else if (req.body.what == "double") {
+    let doubled = [];
+    numbers.forEach(number => {
+      doubled.push(number * 2);
+    });
+    response = {
+      result: doubled
+    };
+  } else {
+    res.send("Thats an error");
+  }
+  res.send(response);
 });
 app.listen(PORT, () => {
   console.log(`I am listening on port ${PORT}`);
