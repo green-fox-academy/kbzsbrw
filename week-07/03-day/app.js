@@ -58,8 +58,6 @@ app.get("/appenda/:appended", (req, res) => {
   }
 });
 app.post("/dountil/:action", (req, res) => {
-  console.log(req.params.action);
-  console.log(req.body);
   let response = {};
   if (req.params.action === "sum") {
     response={result: (req.body.until * (req.body.until + 1)) / 2};
