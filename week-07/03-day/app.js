@@ -50,12 +50,33 @@ app.get("/appenda/:appended", (req, res) => {
   let response = {};
   if (req.params.appended !== undefined) {
     response = {
-      appended: req.params.appended+"a"
+      appended: req.params.appended + "a"
     };
     res.send(response);
-  }else {
-      res.status(404)
+  } else {
+    res.status(404);
   }
+});
+app.post("/dountil/:action", (req, res) => {
+  console.log(req.params.action);
+  console.log(req.body);
+  let response = {};
+  if (req.params.action === "sum") {
+    response={result: (req.body.until * (req.body.until + 1)) / 2};
+  } 
+  else if (req.params.action === "factor") {
+    let sum1 = 1;
+    for (let i = 1; i <= req.body.until; i++) {
+      sum1 = i * sum1;
+    }
+    response = {result: sum1}
+  }
+res.send(response);
+});
+app.post("/login", (req, res) => {
+  console.log(req.body.username);
+  console.log(req.body.password);
+  res.send("ok");
 });
 app.listen(PORT, () => {
   console.log(`I am listening on port ${PORT}`);
