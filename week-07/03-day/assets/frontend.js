@@ -146,6 +146,5 @@ class Updoot {
     });
   }
 }
-
 // Start handling
 new Updoot().init();

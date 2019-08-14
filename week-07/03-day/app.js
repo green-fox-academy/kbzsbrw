@@ -102,6 +102,26 @@ app.post("/arrays", (req, res) => {
   }
   res.send(response);
 });
+function yodifier(text) {
+    let words = text.split(" ")
+  let randomYodaSounds = [
+    "err",
+    "hmmm",
+    "my padawan",
+    "yes,yes",
+    "argh",
+    "and the dark side is evil"
+  ];
+  return words;
+}
+console.log(yodifier("This is my example sentence. Just for fun."));
+app.post("/sith", (req, res) => {
+  if (req.body.text === undefined) {
+    res.send({
+      error: "Feed me some text you have to, padawan young you are. Hmmm."
+    });
+  }
+});
 app.listen(PORT, () => {
   console.log(`I am listening on port ${PORT}`);
 });
