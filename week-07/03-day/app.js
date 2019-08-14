@@ -60,16 +60,15 @@ app.get("/appenda/:appended", (req, res) => {
 app.post("/dountil/:action", (req, res) => {
   let response = {};
   if (req.params.action === "sum") {
-    response={result: (req.body.until * (req.body.until + 1)) / 2};
-  } 
-  else if (req.params.action === "factor") {
+    response = { result: (req.body.until * (req.body.until + 1)) / 2 };
+  } else if (req.params.action === "factor") {
     let sum1 = 1;
     for (let i = 1; i <= req.body.until; i++) {
       sum1 = i * sum1;
     }
-    response = {result: sum1}
+    response = { result: sum1 };
   }
-res.send(response);
+  res.send(response);
 });
 app.post("/login", (req, res) => {
   console.log(req.body.username);
