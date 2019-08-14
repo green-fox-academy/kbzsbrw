@@ -23,6 +23,40 @@ app.get("/doubling", (req, res) => {
   }
   res.send(response);
 });
+app.get("/greeter", (req, res) => {
+  let response = {};
+  if (req.query.name !== undefined && req.query.title !== undefined) {
+    response = {
+      welcome_message: `Oh, hi there ${req.query.name}, my dear ${
+        req.query.title
+      }!`
+    };
+  } else if (req.query.name === undefined && req.query.title !== undefined) {
+    response = {
+      error: "Please provide a name!"
+    };
+  } else if (req.query.name !== undefined && req.query.title === undefined) {
+    response = {
+      error: "Please provide a title!"
+    };
+  } else {
+    response = {
+      error: "Please provide a name and a title!"
+    };
+  }
+  res.send(response);
+});
+app.get("/appenda/:appended", (req, res) => {
+  let response = {};
+  if (req.params.appended !== undefined) {
+    response = {
+      appended: req.params.appended+"a"
+    };
+    res.send(response);
+  }else {
+      res.status(404)
+  }
+});
 app.listen(PORT, () => {
   console.log(`I am listening on port ${PORT}`);
 });
