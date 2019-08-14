@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  background-color: purple;
+  height: auto;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+}
+a {
+  height: 20px;
+  width: auto;
+  background-color: cyan;
+  margin: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.left-bar {
+position: relative;
+left: 50%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  justify-content: column;
+  display: flex;
+  width: 68%;
+  height: 600px;
+  background-color: yellow;
+  border: 1px solid;
+}
+.sidebar {
+  width: 28%;
+  background-color: green;
+}

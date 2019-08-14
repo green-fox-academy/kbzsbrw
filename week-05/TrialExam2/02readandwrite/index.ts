@@ -64,4 +64,4 @@ function mostCommonCharacters(filename: string): object {
     return mostCommonCharacters;
   }
 }
-console.log(mostCommonCharacters("text.txt"));
+console.log(mostCommonCharacters("texta.txt"));
