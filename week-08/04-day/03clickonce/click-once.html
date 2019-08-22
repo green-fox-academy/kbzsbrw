@@ -14,18 +14,16 @@
       //   hint: take a look at the button attributes https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
       let button = document.querySelector('button');
       //first solution
-      //   button.addEventListener('click', (ev) => {
-      //       console.log(ev.timeStamp);
-      //       button.disabled = true;
-      //   });
+      // button.addEventListener('click', (ev) => {
+      //     console.log(ev.timeStamp);
+      //     button.disabled = true;
+      // });
       // second solution
       function consoleLogTimestamp(ev) {
         console.log(ev.timeStamp);
-
         button.removeEventListener('click', consoleLogTimestamp);
       }
       button.addEventListener('click', consoleLogTimestamp);
-      //   if (button.cli)
     </script>
   </body>
 </html>
