@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workshop: EventListeners</title>
+  </head>
+  <body>
+    <ul>
+      <li>apple</li>
+      <li>balloon</li>
+      <li>cat</li>
+      <li>dolphin</li>
+    </ul>
+    <button>How many items are in the list?</button>
+    <p class="result">dunno :(</p>
+
+    <!-- You can work in the html or in a separate js file. Like: -->
+    <script>
+      //   On the click of the button,
+      //   Count the items in the list
+      //   And display the result in the result element.
+      "use strict";
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", function(ev) {
+        let ilList = document.querySelectorAll("li");
+        document.querySelector('p').innerHTML = `There are ${ilList.length} item in the list`;
+      });
+    </script>
+  </body>
+</html>
