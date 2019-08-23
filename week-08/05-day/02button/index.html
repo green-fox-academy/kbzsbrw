@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <div class="pet">
+      <h2>What is your favourite pet?</h2>
+      <form action="/pet" method="POST">
+        <label for="dog">Dog</label>
+        <input class="real-pet" type="radio" name="favourite-pet" id="dog" value="dog" />
+        <label for="cat">Cat</label>
+        <input class="real-pet" type="radio" name="favourite-pet" id="cat" value="cat" />
+        <label for="fish">Victor the Goldfish</label>
+        <input type="radio" name="favourite-pet" id="fish" value="fish" />
+      </form>
+    </div>
+    <div class="signup">
+        <h2>Would you like to sign up for cat facts?</h2>
+        <form action="/signup" method="POST">
+        <label for="yes">Yes</label>
+        <input type="radio" name="signup" id="yes" value="true">
+        <label for="no">No</label>
+        <input type="radio" name="signup" id="no" value="false">
+        </form>
+    </div>
+    <div class="button">
+        <button type="button" disabled>I love cats</button>
+        <button type="submit" disabled>Sign up</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
