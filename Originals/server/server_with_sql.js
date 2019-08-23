@@ -3,8 +3,9 @@
 //initialize here:
 const PORT = 5000;
 const databaseName = "bookstore";
-const databasePassword ="password1234"
+const databasePassword ="password1234";
 const express = require("express");
+app.use(express.static("public"));
 
 //server with SQL
 app.use(express.json());
