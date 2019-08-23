@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Login form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Account login</h1>
-    <main>
-      <form action="/send" method="POST">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required autofocus />
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" />
-        <a>Forget password?</a>
-        <input type="submit" value="Login" />
-      </form>
-    </main>
+    <form action="/send" method="POST">
+      <h1>Account login</h1>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required autofocus />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+      <a>Forgot password?</a>
+      <input type="submit" value="Login" />
+    </form>
+    <script src="frontend.js"></script>
   </body>
 </html>

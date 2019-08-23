@@ -42,5 +42,19 @@ app.get("/books/", (req, res) => {
     }
   );
 });
+app.post('/send', (req, res) => {
+  const { result } = req.body;
+  const query = `insert into users(username,password) values(?, ?);`;
+  console.log(req.body);
+  connection.query(query, [req.body.username, req.body.password], (err, result) => {
+    if(err === null) {
+      res.sendStatus(201);
+    }
+    else {
+      console.log(err);
+      res.sendStatus(500);
+    }
+  });
+});
 //listen
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

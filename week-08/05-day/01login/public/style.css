@@ -1,0 +1,79 @@
+* {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  font-weight: 400;
+  box-shadow: none;
+  border:none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+body {
+  display: flex;
+  background-color: #dddddd;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0, 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+  background-color: #f5f5dc;
+  width: 60vh;
+  text-transform: uppercase;
+  letter-spacing: 0, 2rem;
+}
+label {
+    font-size: 0.75rem;
+}
+a {
+    font-size: 0.5rem;
+    text-align: right;
+    text-transform: none;
+}
+input {
+  margin: 10px 0;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+input[type='submit'] {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #484848;
+  color: white;
+  width: 120px;
+  height: 2rem;
+}
+input[type="password"] {
+    background: url("./pics/eye.png") no-repeat;
+    background-color: white;
+    background-size: 1rem;
+    background-position: 265px 8px;
+}
+
+input:focus {
+    border: 2px solid limegreen;
+}
