@@ -20,3 +20,13 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+
+/*
+sticky header
+header {
+  display: flex;
+  background-color: purple;
+  height: auto;
+  position: sticky;
+  top: 0;
+} */
