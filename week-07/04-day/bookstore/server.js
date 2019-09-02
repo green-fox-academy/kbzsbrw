@@ -31,6 +31,7 @@ app.get("/books/", (req, res) => {
     (err, rows) => {
       if (err) {
         console.log(err.message);
+        return;
       }
       res.send(rows);
     }
