@@ -1,0 +1,15 @@
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: blueviolet;
+    color: lime;
+    font-family: fantasy;
+}
+button {
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: violet;
+    color: lime;
+    border: 1px solid slateblue;
+}
