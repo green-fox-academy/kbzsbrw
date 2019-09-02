@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-      <header>
-          <h1>Enter character name</h1>
-          
-      </header>
+    <main>
+      <section class="search-bar">
+        <form action="/search" method="POST">
+          <label for="charachter">Enter charachter name</label></br>
+          <input type="text" name="name" id="charachter" placeholder="Character name" required autofocus>
+          <input type="submit" id="submit" value="Search">
+        </form>
+      </section>
+      <section class="movies">
+        <ul>
+          <!-- list from frontend -->
+        </ul>
+      </section>
+      <p>Click to list movies</p>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,86 @@
+* {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  font-weight: 400;
+  box-shadow: none;
+  border: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background: url('https://hdqwalls.com/download/andromeda-galaxy-way-ik-1920x1080.jpg')
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  margin: 30px auto;
+}
+
+main {
+  background-color: rgba(192, 192, 192, 0.5);
+  box-shadow: 5px 5px 5px;
+  border-radius: 20px;
+  border-color: ghostwhite;
+  padding: 20px;
+}
+.search-bar {
+  display: inline;
+  margin: 15px 0px;
+  margin-left: 15px;
+}
+.search-bar label {
+  font-weight: 700;
+  color: #111111dd;
+}
+input[type='text'] {
+  background-color: #ffffff3f;
+  color: #ffffff;
+  height: 2rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 24px 12px rgba(56, 56, 56, 1);
+  -moz-box-shadow: 0px 0px 24px 12px rgba(56, 56, 56, 1);
+  box-shadow: 0px 0px 24px 12px rgba(56, 56, 56, 1);
+}
+
+input[type='submit'] {
+  background-color: #ffffff3f;
+  text-decoration: underline;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  height: 3rem;
+  border: none;
+  border-radius: 100%;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0px 0px 24px 12px rgba(56, 56, 56, 1);
+  -moz-box-shadow: 0px 0px 24px 12px rgba(56, 56, 56, 1);
+  box-shadow: 0px 0px 24px 12px rgba(56, 56, 56, 1);
+  width: 100px;
+}
+input[type='submit']:hover {
+  border: 2px solid lightcoral;
+}
+p {
+  font-weight: 700;
+  color: #111111dd;
+}
