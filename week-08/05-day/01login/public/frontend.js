@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 form.addEventListener('submit', e => {
+  console.log(form);
     e.preventDefault();
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
@@ -13,6 +14,6 @@ form.addEventListener('submit', e => {
     };
     xhr.open('POST', '/send');
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({ username: username.value,password: password.value }));
+    xhr.send(JSON.stringify({ username: username.value, password: password.value }));
     form.reset();
   });
