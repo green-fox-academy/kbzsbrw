@@ -84,3 +84,19 @@ p {
   font-weight: 700;
   color: #111111dd;
 }
+li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  text-align: start;
+  padding-top: 0.5rem;
+}
+li:hover {
+  text-decoration: underline;
+  text-decoration-color: ghostwhite;
+  color: ghostwhite;
+  cursor: pointer;
+}
+ul {
+  margin-bottom: 10px;
+  
+}

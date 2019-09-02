@@ -1,25 +1,41 @@
 'use strict';
 
-const apiURL = 'https://swapi.co/api/';
+const apiURL = 'https://swapi.co/api/people/';
 const form = document.querySelector('form');
+const ul = document.querySelector('ul');
+const inputText = document.querySelector('input[type="text"]');
 
-
-form.addEventListener("submit", e => {
-    console.log(form);
-    e.preventDefault();
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status >= 200 && xhr.status < 300) {
-          console.log("ok");;
-        } else {
-          console.log('frontend can send req');
-          return;
-        }
-      }
-    };
-    xhr.open('POST', '/search');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({"name":name.value}));
-    form.reset();
-})
+async function createCharacterList() {
+  try {
+    const api = await fetch(apiURL);
+    const result = await api.json();
+    const characters = Array.from(result.results);
+    characters.forEach(character => {
+      let li = document.createElement('li');
+      li.innerText = character.name;
+      ul.appendChild(li);
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+async function createMovieList(URL) {
+  try {
+    const api = await fetch(URL);
+    const result = await api.json();
+    const characters = Array.from(result.results);
+    characters.forEach(character => {
+      let li = document.createElement('li');
+      li.innerText = character.name;
+      ul.appendChild(li);
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+window.onload = createCharacterList();
+form.addEventListener('submit', e => {
+  console.log(inputText.value);
+  e.preventDefault();
+  fetch(apiURL).then(console.log);
+});
