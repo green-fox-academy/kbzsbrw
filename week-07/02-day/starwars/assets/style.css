@@ -96,7 +96,20 @@ li:hover {
   color: ghostwhite;
   cursor: pointer;
 }
+.back {
+  text-decoration: underline;
+  text-decoration-color: ghostwhite;
+  color: ghostwhite;
+  cursor: pointer;
+}
 ul {
   margin-bottom: 10px;
   
+}
+.movie:hover {
+  text-decoration: none;
+  text-decoration-color: ghostwhite;
+  color: #111111dd;
+  cursor: default;
+
 }
