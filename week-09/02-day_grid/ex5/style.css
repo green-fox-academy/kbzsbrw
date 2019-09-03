@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 0;
+  justify-content: center;
+  font-weight: bold;
+}
+
+span {
+  height: 80px;
+  background-color: yellow;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  transform: rotate(-45deg);
+}
+main {
+  grid-column: 2/7;
+  grid-row: 2/6;
+  box-shadow: inset 0px 0px 5px black;
+  background-color: lime;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card {
+  background-color: purple;
+  height: 60%;
+  width: 40%;
+  margin: 30px;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
