@@ -1,0 +1,26 @@
+main {
+  display: grid;
+  background-color: orangered;
+  text-align: center;
+  color: whitesmoke;
+  grid-template-columns: 20fr 60fr 20fr;
+  grid-template-rows: 250px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.side {
+  background-color: yellow;
+  margin: 10px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article {
+  margin: 10px;
+  background-color: green;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
