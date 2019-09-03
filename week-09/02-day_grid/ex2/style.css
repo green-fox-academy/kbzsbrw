@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 10px;
+  background-color: grey;
+}
+
+.purple {
+  background-color: purple;
+}
+.six {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seven {
+    background-color: yellow;
+    height: 60%;
+    width: 70%;
+}
+.six {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
