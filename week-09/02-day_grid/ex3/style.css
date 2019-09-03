@@ -19,8 +19,8 @@ nav {
 nav:first-child {
   margin-left: 10%;
 }
-nav:nth-child(3){
-    width: 80px;
+nav:nth-child(3) {
+  width: 80px;
 }
 
 .container {
