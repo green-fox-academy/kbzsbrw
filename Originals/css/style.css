@@ -30,3 +30,23 @@ header {
   position: sticky;
   top: 0;
 } */
+
+/*
+cool background tricks:
+main {
+background-image: url(//unsplash.it/800/600);
+background-color: black;
+background-blend-mode: multiply;
+background-size: cover;
+background-position: top left;
+transition: all ease-in-out 300ms;
+}
+
+/*
+cool grid layout
+
+.container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
