@@ -9,6 +9,7 @@ app.get('/groot', (req, res) => {
       translated: 'I am groot'
     });
   } else {
+    res.status(400);
     res.send({ error: 'no msg bro' });
   }
 });
