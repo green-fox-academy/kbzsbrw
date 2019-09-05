@@ -36,7 +36,6 @@ header > img {
 aside {
   width: 30%;
   margin: 15px;
-  background-color: lightgray;
 }
 aside > button {
   width: 100%;
@@ -50,26 +49,35 @@ aside > button {
   border: none;
   height: 3rem;
 }
+.about-text {
+  background-color: whitesmoke;
+}
 .about {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  background-color: whitesmoke;
-  align-items: center;
+  background-color: lightgray;
 }
-.about > h1 {
-    margin-left: 2rem;
+.about-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.about-text > h1 {
+  margin-left: 2rem;
   background-color: whitesmoke;
   text-transform: uppercase;
 }
-.about > span {
+.about-text > span {
   color: cornflowerblue;
   margin-left: 0.6rem;
 }
-aside > p {
-    text-align: center;
+.about > p {
+  text-align: center;
 }
-aside > ul {
-    margin-left: 2rem;
+.about > ul {
+  text-align: left;
+  margin-left: 2rem;
 }
 main {
   margin-top: 15px;
