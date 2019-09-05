@@ -43,8 +43,3 @@ i.fas:hover {
   width: 120px;
   height: 100%;
 }
-i.far:hover {
-    .delete > span {
-        visibility: visible;
-    }
-}
