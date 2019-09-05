@@ -1,0 +1,50 @@
+body {
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+}
+button {
+  background-color: darkslategray;
+  padding: 0.75rem;
+  box-shadow: none;
+  border: none;
+}
+.delete {
+  display: flex;
+  margin: 20px;
+}
+.confirm {
+  display: flex;
+}
+i {
+  color: antiquewhite;
+  size: 3rem;
+}
+
+i.far:hover {
+  color: red;
+}
+i.fas:hover {
+  color: green;
+}
+.delete > span {
+  color: white;
+  background-color: tomato;
+  size: 3rem;
+  margin: 0 auto;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100%;
+}
+i.far:hover {
+    .delete > span {
+        visibility: visible;
+    }
+}
