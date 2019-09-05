@@ -5,7 +5,7 @@
   text-decoration: 0;
   font-weight: 400;
   box-shadow: none;
-  border:none;
+  border: none;
 }
 
 html {
@@ -21,9 +21,9 @@ html {
   box-sizing: inherit;
 }
 h1 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
 }
 body {
   display: flex;
@@ -45,12 +45,12 @@ form {
   letter-spacing: 0, 2rem;
 }
 label {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 a {
-    font-size: 0.5rem;
-    text-align: right;
-    text-transform: none;
+  font-size: 0.5rem;
+  text-align: right;
+  text-transform: none;
 }
 input {
   margin: 10px 0;
@@ -67,13 +67,16 @@ input[type='submit'] {
   width: 120px;
   height: 2rem;
 }
-input[type="password"] {
-    background: url("./pics/eye.png") no-repeat;
-    background-color: white;
-    background-size: 1rem;
-    background-position: 265px 8px;
+input[type='password'] {
+  background: url('./pics/eye.png') no-repeat;
+  background-color: white;
+  background-size: 1rem;
+  background-position: 265px 8px;
 }
 
 input:focus {
-    border: 2px solid limegreen;
+  outline: 2px solid red;
+}
+input[type='password']:focus {
+  border: 2px solid limegreen;
 }

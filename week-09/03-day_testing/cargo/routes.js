@@ -1,19 +1,31 @@
 const express = require('express');
 const app = express();
+let caliber25 = 0;
+let caliber30 = 0;
+let caliber50 = 0;
+let shipstatus = 'empty';
+let ready = false;
 
-app.get('/yondu', (req, res) => {
-  if (req.query.time === '0') {
-    res.status(401)
-    res.send({ error: 'no time, no speed' });
-  } else if (req.query.distance && req.query.time) {
-    res.send({
-      distance: req.query.distance,
-      time: req.query.time,
-      speed: req.query.distance / req.query.time
-    });
-  } else {
-    res.sendStatus(400);
+app.get('/rocket', (req, res) => {
+  res.send({
+    caliber25: caliber25,
+    caliber30: caliber30,
+    caliber50: caliber50,
+    shipstatus: shipstatus,
+    ready: ready
+  });
+});
+app.get('/rocket/fill', (req, res) => {
+  if (req.query.caliber === '.50') {
+    caliber50 += req.query.caliber;
   }
+  res.send({
+    caliber25: caliber25,
+    caliber30: caliber30,
+    caliber50: caliber50,
+    shipstatus: shipstatus,
+    ready: ready
+  });
 });
 
 module.exports = app;
