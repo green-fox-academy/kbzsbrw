@@ -1,3 +1,91 @@
 body {
-    background-color: grey;
+  background-color: silver;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url('https://addons-media.operacdn.com/media/CACHE/images/themes/55/46655/1.0-rev1/images/5386d5d2-a2e0-4fc0-9eda-ff2459a7e112/69c1298f408e761fadf0980097021004.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > span {
+  color: whitesmoke;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+}
+
+header > img {
+  position: absolute;
+  left: 10px;
+  height: 10%;
+}
+.container {
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+aside {
+  width: 30%;
+  margin: 15px;
+  background-color: lightgray;
+}
+aside > button {
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border: none;
+  height: 3rem;
+}
+.about {
+  display: flex;
+  width: 100%;
+  background-color: whitesmoke;
+  align-items: center;
+}
+.about > h1 {
+    margin-left: 2rem;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+}
+.about > span {
+  color: cornflowerblue;
+  margin-left: 0.6rem;
+}
+aside > p {
+    text-align: center;
+}
+aside > ul {
+    margin-left: 2rem;
+}
+main {
+  margin-top: 15px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: whitesmoke;
+}
+.vote {
+  width: 25%;
+}
+section > article {
+  width: 75;
 }
