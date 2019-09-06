@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-image: url('https://addons-media.operacdn.com/media/CACHE/images/themes/55/46655/1.0-rev1/images/5386d5d2-a2e0-4fc0-9eda-ff2459a7e112/69c1298f408e761fadf0980097021004.jpg');
+  background-image: url('https://www.scitecheuropa.eu/wp-content/uploads/2019/07/ClaudioVentrella.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
@@ -32,6 +32,7 @@ header > img {
   margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
 }
 aside {
   width: 30%;
@@ -81,7 +82,7 @@ aside > button {
 }
 main {
   margin-top: 15px;
-  width: 65%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
