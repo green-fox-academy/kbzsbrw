@@ -1,9 +1,9 @@
 <form method="POST" action="/posts">
   <label for="title">title:</label>
-  <input name="title" required />
-  <label for="url">url:</label>
+  <textarea rows="5" cols ="50" name="title" required autofocus></textarea>
+  <label for="url">URL:</label>
   <input type="url" name="url" required />
-  <input type="submit" value="login" />
+  <input type="submit" value="Submit" />
   <% if (typeof error !== 'undefined') {%>
   <p><%=error%></p>
   <% } %>

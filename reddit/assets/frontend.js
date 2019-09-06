@@ -8,11 +8,12 @@ fetch('/api/result')
 
 submitButton.addEventListener('click', e => {
     e.preventDefault();
+    submitButton.style.display = 'none';
     mainContent.innerHTML = '';
     // while (mainContent.firstChild) {
     //     mainContent.removeChild(mainContent.firstChild)
     // }
-    fetch('/login')
+    fetch('/submit')
   .then(res => res.text())
   .then(content => mainContent.innerHTML = content);
 

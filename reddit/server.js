@@ -29,6 +29,6 @@ app.get('/api/result', (req, res) => {
     .catch(err => console.log(err));
 });
 
-app.get('/login', (req, res) => {
+app.get('/submit', (req, res) => {
   res.render('submit');
 })

@@ -145,6 +145,18 @@ form {
   flex-direction: column;
 }
 
+input,label,textarea {
+  margin: 10px 20px;
+  font-weight: 400;
+}
+input[type="submit"] {
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  width: 40%;
+  height: 2rem;
+}
+
 /* MAKE RESPONSIVE */
 @media screen and (max-width:780px) {
   .container {
