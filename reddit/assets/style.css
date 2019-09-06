@@ -138,6 +138,14 @@ article > a {
   color: black;
 }
 
+/* FORM */
+form {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAKE RESPONSIVE */
 @media screen and (max-width:780px) {
   .container {
     flex-direction: column;
