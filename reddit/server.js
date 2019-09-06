@@ -11,11 +11,11 @@ app.use(express.static('assets'));
 app.use(express.static('views'));
 app.use(express.json());
 
+app.listen(PORT, () => console.log(`I am listening on ${PORT}`));
+
 app.get('/', (req, res) => {
   res.render('index');
 });
-app.listen(PORT, () => console.log(`I am listening on ${PORT}`));
-
 app.get('/api/result', (req, res) => {
   fetch(postURL, {
     headers: {
@@ -31,4 +31,12 @@ app.get('/api/result', (req, res) => {
 
 app.get('/submit', (req, res) => {
   res.render('submit');
+});
+
+app.post('/posts', express.urlencoded(), (req, res) => {
+  
 })
+
+app.get('/posts', (req, res) => {
+  res.render('index');
+});
