@@ -137,3 +137,17 @@ article > a {
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width:780px) {
+  .container {
+    flex-direction: column;
+  }
+  aside {
+    margin: 2% auto;
+    width: 80%;
+  }
+  main {
+    margin: 2% auto;
+    width: 80%;
+  }
+}
