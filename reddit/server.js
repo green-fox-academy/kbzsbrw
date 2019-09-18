@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 const fetch = require('node-fetch');
 const postURL = 'http://secure-reddit.herokuapp.com/simple/posts';
 
@@ -24,6 +24,7 @@ app.get('/api/result', (req, res) => {
   })
     .then(response => response.json())
     .then(json => {
+      console.log(json);
       res.render('post', { posts: json.posts });
     })
     .catch(err => console.log(err));
